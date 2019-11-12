@@ -1,0 +1,15 @@
+h1 {
+  font-weight: 800;
+}
+
+#grid {
+
+  width: 624px;
+  margin: auto;
+  flex-wrap: wrap;
+
+  ::ng-deep app-card + app-card {
+    margin-left: 16px;
+  }
+
+}

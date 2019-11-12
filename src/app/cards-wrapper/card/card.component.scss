@@ -1,0 +1,30 @@
+.card-item {
+  width: 48px;
+  height: 64px;
+  border-radius: 8px;
+  box-shadow: 0 2px 7px -1px rgba(184,184,184,1);
+  margin-bottom: 16px;
+  font-weight: 700;
+  transition: all .4s linear;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 7px -1px rgba(140,140,140,1);
+  }
+
+  &.opened {
+    cursor: initial;
+    box-shadow: 0 2px 7px -1px rgba(101,0,184,1);
+  }
+
+  &.checked {
+    cursor: initial;
+    box-shadow: 0 2px 7px -1px rgba(0,184,49,1);
+  }
+
+  span {
+    font-size: 24px;
+    transition: all .4s linear;
+  }
+
+}

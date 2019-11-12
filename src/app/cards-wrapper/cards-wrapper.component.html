@@ -1,0 +1,7 @@
+<h1>Mahjong-like game</h1>
+
+<div id="grid" class="d-flex align-items-center justify-content-center mt-5">
+  <ng-container *ngFor="let card of cards; let i = index" class="card-wrapper">
+    <app-card [ngClass]="{'ml-0': i === 10 || i === 20}" [cardName]="card" [cardNum]="i"></app-card>
+  </ng-container>
+</div>

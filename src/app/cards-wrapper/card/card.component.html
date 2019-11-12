@@ -1,0 +1,6 @@
+<div (click)="openCard()"
+     [ngClass]="{'opened': opened, 'checked': checked}"
+     class="d-flex card-item align-items-center justify-content-center"
+     [@flipInY]="opened" [@flipOutY]="!opened && !checked">
+  <span *ngIf="opened || checked">{{cardName}}</span>
+</div>
