@@ -37,7 +37,7 @@ export class CardComponent implements OnDestroy {
   }
 
   openCard() {
-    if (!this.checked) {
+    if (!this.checked && !this.opened) {
       this.opened = true;
       this.cardService.addCard(this.cardName);
     }
